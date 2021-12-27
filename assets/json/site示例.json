@@ -1,0 +1,66 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1637765094.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"ProjectName",
+		"Introduce",
+		"UpdatedTime",
+		"Functionary",
+		"GitAdress"
+	],
+	"properties": {
+		"ProjectName": {
+			"$id": "#root/ProjectName", 
+			"title": "Projectname", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"项目名"
+			],
+			"pattern": "^.*$"
+		},
+		"Introduce": {
+			"$id": "#root/Introduce", 
+			"title": "Introduce", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"项目介绍"
+			],
+			"pattern": "^.*$"
+		},
+		"UpdatedTime": {
+			"$id": "#root/UpdatedTime", 
+			"title": "Updatedtime", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"20121-11-24"
+			],
+			"pattern": "^.*$"
+		},
+		"Functionary": {
+			"$id": "#root/Functionary", 
+			"title": "Functionary", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"负责人姓名"
+			],
+			"pattern": "^.*$"
+		},
+		"GitAdress": {
+			"$id": "#root/GitAdress", 
+			"title": "Gitadress", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"GitHub仓库地址"
+			],
+			"pattern": "^.*$"
+		}
+	}
+}

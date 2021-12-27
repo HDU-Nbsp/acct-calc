@@ -1,0 +1,71 @@
+body {
+  height: 975px;
+}
+
+iframe {
+  height: calc(100% - 60px);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(10, 89, 92);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.box:hover {
+  background-color: rgb(9, 77, 80) !important;
+}
+
+.box1 {
+  background-color: rgb(8, 74, 77);
+}
+
+.add {
+  align-self: end;
+}
+
+#start {
+  display: flex;
+}
+
+.mark {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  right: 50px;
+  bottom: 50px;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.mark-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mark-content {
+  width: 100%;
+}

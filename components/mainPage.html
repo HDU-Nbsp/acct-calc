@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ch">
+<!-- 1.更新的项目列表
+2.github排名
+.....more information -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="../assets/js/mainPage.js"></script>
+</head>
+
+<body>
+  <h1>成果展示</h1>
+  <section class="container">
+    <div id="preview">
+      <img src="../assets/img/1.png" alt="">
+    </div>
+    <div class="title">
+      <h3>更新榜</h3>
+    </div>
+    <div class="title">
+      <h3>评分榜</h3>
+    </div>
+    <div class="showBox">
+      <iframe src="./UpdateList.html" frameborder="0"></iframe>
+    </div>
+    <div class="showBox">
+      <iframe src="./StarList.html" frameborder="0"></iframe>
+    </div>
+  </section>
+</body>
+<style>
+  body {
+    height: 800px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  select {
+    width: 250px;
+  }
+
+  img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80%;
+  }
+
+  .showBox {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 48%;
+    height: 80%;
+    box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
+    -webkit-box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
+    -moz-box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
+  }
+
+  .title {
+    width: 47%;
+  }
+
+  #preview {
+    border-radius: 20px;
+    width: 48%;
+    margin: 0 20%;
+    overflow: hidden;
+    height: 80%;
+    box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
+    -webkit-box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
+    -moz-box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
+  }
+</style>
+<!-- <script type="text/javascript">
+  let calcSelector = document.querySelector('#calcSelector');
+  calcSelector.onchange = () => {
+    let value = calcSelector.value;
+    alert(value);
+  }
+</script> -->
+
+</html>
