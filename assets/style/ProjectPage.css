@@ -79,3 +79,7 @@ h3:nth-child(5) {
   justify-content: center;
   flex: 1;
 }
+
+.projectInformation {
+  text-decoration: none;
+}

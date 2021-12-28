@@ -1,5 +1,5 @@
 let projectList = ["https://huangda2027.github.io/mortgage.github.io/",
-  "https://francochaose.github.io/myfundwebbbbb.io/",
+  "https://francochaose.github.io/myfundwebeo.io/",
   "https://magic-tangerine.github.io/calculator.github.io/",
   "https://panda0805.github.io/5i1a.github.io/web/home/home.html",
   "https://luzy12345.github.io/web.github.io",
@@ -40,7 +40,7 @@ function renderJSON (data, gitPath) {
   projectNode.className = 'project'
   projectNode.innerHTML =
     '<a class="projectName" href = "' + gitPath + '" onclick="openProject(event)">' + data.projectname + '</a>'
-    + '<div class="projectInformation">' + data.introduce + '</div>'
+    + '<a class="projectInformation" href = "' + gitPath + '" onclick="openProject(event)">' + data.introduce + '</a>'
     + '<div class="gitStars">' + 5 + '</div>'
     + '<div class="updatedTime">' + data.updatedtime + '</div>'
     + '<div class="functionary">' + data.functionary + '</div>'
