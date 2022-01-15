@@ -48,6 +48,7 @@ a {
 
 .mark {
   position: fixed;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

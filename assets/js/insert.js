@@ -1,3 +1,12 @@
+let errData = {
+  "ProjectName": "undefined",
+  "Introduce": "未上传site.json或上传有误（建议检查一下是不是404）",
+  "GitStar": "5",
+  "UpdatedTime": "UNKNOWN",
+  "Functionary": "Author",
+  "GitAdress": "null"
+}
+
 let projectList = ["https://huangda2027.github.io/mortgage.github.io/",
   "https://francochaose.github.io/myfundwebeo.io/",
   "https://magic-tangerine.github.io/calculator.github.io/",
@@ -12,25 +21,16 @@ let projectList = ["https://huangda2027.github.io/mortgage.github.io/",
   "https://banssia.github.io/calculator.github.io/"
 ]
 
-let errData = {
-  "ProjectName": "undefined",
-  "Introduce": "未上传site.json或上传有误（建议检查一下是不是404）",
-  "GitStar": "5",
-  "UpdatedTime": "UNKNOWN",
-  "Functionary": "Author",
-  "GitAdress": "null"
-}
-
-function insertProjectDemo (filePath, gitPath) {
+function insertProjectDemo (filePath, gitPath, index) {
   $.getJSON(filePath, function (data) {
-    renderJSON(data, gitPath)
+    renderJSON(data, gitPath, index)
   }).catch(err => {
     console.log(filePath)
-    renderJSON(errData, gitPath)
+    renderJSON(errData, gitPath, index)
   })
 }
 
-function renderJSON (data, gitPath) {
+function renderJSON (data, gitPath, index) {
   let parent = $('.form')[0]
   let projectNode = document.createElement('div')
 
@@ -38,6 +38,7 @@ function renderJSON (data, gitPath) {
     data.UpdatedTime = '2021-12-7'
   }
   projectNode.className = 'project'
+  projectNode.id = index
   projectNode.innerHTML =
     '<a class="projectName" href = "' + gitPath + '" onclick="openProject(event)">' + data.projectname + '</a>'
     + '<a class="projectInformation" href = "' + gitPath + '" onclick="openProject(event)">' + data.introduce + '</a>'
@@ -50,7 +51,7 @@ function renderJSON (data, gitPath) {
 function main () {
   for(let i = 0; i < projectList.length; i++) {
     let filePath = '../assets/json/site' + i + '.json'
-    insertProjectDemo(filePath,projectList[i])
+    insertProjectDemo(filePath,projectList[i],i)
   }
 }
 

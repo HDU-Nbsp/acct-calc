@@ -15,12 +15,12 @@ let projectIndex
 function toProject () {
   document.querySelector('iframe').src = "./components/ProjectPage.html"
   activeNav(1);
-  window.location = "#/projectlist"
+  window.location = "/#/projectlist"
 }
 function toMainPage () {
   document.querySelector('iframe').src = "./components/mainPage.html"
   activeNav(0);
-  window.location = "#/"
+  window.location = "/#/"
 }
 function toAddPage () {
   document.querySelector('iframe').src = "./components/AddProject.html"
@@ -31,18 +31,25 @@ function activeNav(nav) {
   $('.box').css('background-color', 'rgb(10, 89, 92)')
   $('.box:eq(' + nav + ')').css('background-color', 'rgb(8, 74, 77)')
 }
-function checkLocation (href) {
+function checkLocation (hash) {
+  hash = hash.toLowerCase()
+  href = hash.split('/')[1]
+  projectId = hash.split('/')[2]
   switch(href) {
-    case '#/': {
+    case '': {
       toMainPage()
       break
     }
-    case '#/projectlist': {
+    case 'projectlist': {
       toProject()
       break
     }
-    case '#/add': {
+    case 'add': {
       toAddPage()
+      break
+    }
+    default: {
+      toMainPage()
     }
   }
 }
