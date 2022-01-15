@@ -14,17 +14,17 @@ let projectIndex
 
 function toProject () {
   document.querySelector('iframe').src = "./components/ProjectPage.html"
-  activeNav(1);
-  window.location = "/#/projectlist"
+  activeNav(1)
+  window.location = "#/projectlist"
 }
 function toMainPage () {
   document.querySelector('iframe').src = "./components/mainPage.html"
-  activeNav(0);
-  window.location = "/#/"
+  activeNav(0)
+  window.location = "#/"
 }
 function toAddPage () {
   document.querySelector('iframe').src = "./components/AddProject.html"
-  activeNav(2);
+  activeNav(2)
   window.location = "#/add"
 }
 function activeNav(nav) {
