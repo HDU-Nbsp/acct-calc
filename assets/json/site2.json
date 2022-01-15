@@ -1,8 +1,8 @@
 {
-  "projectname": "json测试",
-  "introduce": "买车网",
-  "gitstar": "6",
-  "updatedtime": "2021-11-30",
-  "functionary": "吴优",
-  "gitadress": "https://magic-tangerine.github.io/calculator.github.io/"
+    "projectname": "买车网",
+    "introduce": "为用户买车提供建议",
+    "gitstar": "5",
+    "updatedtime": "2021-12-26",
+    "functionary": "吴优",
+    "gitadress": "https://github.com/magic-tangerine/calculator.github.io/"
 }
