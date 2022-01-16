@@ -14,16 +14,37 @@
 </head>
 
 <body>
-  <h1>成果展示</h1>
   <section class="container">
     <div id="preview">
-      <img src="../assets/img/1.png" alt="">
+      <div class="blackBlock"><br /><div style="cursor: pointer;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HDU</div></div>
+      <div class="whiteBlock"></div>
+      <div class="mainBox">
+        <div class="tabBar">
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+        <div class="imgBox">
+          <img src="../assets/img/1.png" alt="" class="img1"/>
+        </div>
+        <div class="textArea">
+          <h1>Our Project</h1>
+          <div class="lowerTxt">
+            This is a showcase of all our projects for the semester
+          </div>
+          <h3>
+            includes all innovative practices
+          </h3>
+        </div>
+      </div>
     </div>
   </section>
 </body>
 <style>
   body {
     height: 800px;
+    background-image: url('../assets/img/backgroundImg.jpg');
+    background-size: 100% 100%;
   }
 
   iframe {
@@ -36,20 +57,39 @@
   }
 
   img {
+    position: relative;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  li {
+    color: white;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+  
   .container {
+    position: relative;
+    top: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 80%;
+    height: 90%;
   }
-
+  
+  .blackBlock {
+    height: 100%;
+    width: 30%;
+    background-color: black;
+    color: #fff;
+  }
+  
   .showBox {
     border-radius: 20px;
     overflow: hidden;
@@ -60,16 +100,72 @@
     -moz-box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
   }
 
+  .mainBox {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    width: 40%;
+    height: 350px;
+    left: 30%;
+  }
+
+  .tabBar {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .textArea {
+    height: 75%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imgBox {
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+    width: 50%;
+    height: 350px;
+  }
+  
   .title {
     width: 47%;
   }
+  
+  .img1 {
+    z-index: 1;
+  }
 
+  .img2 {
+    z-index: 2;
+  }
+
+  .img3 {
+    z-index: 3;
+  }
+
+  .lowerTxt {
+    width: 80%;
+    display: flex;
+    align-content: space-around;
+  }
+  
   #preview {
+    display: flex;
+    align-items: center;
     border-radius: 20px;
-    width: 48%;
+    width: 65%;
+    background-color: #fff;
     margin: 0 20%;
     overflow: hidden;
-    height: 80%;
+    height: 90%;
     box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
     -webkit-box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);
     -moz-box-shadow: 14px 18px 53px -9px rgba(87, 87, 87, 0.44);

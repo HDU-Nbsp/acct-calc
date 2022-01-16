@@ -28,8 +28,8 @@ function toAddPage () {
   window.location = "#/add"
 }
 function activeNav(nav) {
-  $('.box').css('background-color', 'rgb(10, 89, 92)')
-  $('.box:eq(' + nav + ')').css('background-color', 'rgb(8, 74, 77)')
+  $('.box').css('background-color', '#fff')
+  $('.box:eq(' + nav + ')').css('background-color', 'rgb(236, 236, 236)')
 }
 function checkLocation (hash) {
   hash = hash.toLowerCase()
